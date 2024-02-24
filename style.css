@@ -1,0 +1,161 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  background-color: hsl(210, 46%, 95%);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* overflow: scroll; */
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.everything {
+  /* Making Grid  */
+  display: grid;
+  gap: 2rem;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-auto-columns: minmax(auto, 15rem);
+  grid-auto-rows: minmax(auto, 7rem);
+}
+.content {
+  padding: 20px;
+  border-radius: 0.4rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* Making Grid */
+  display: grid;
+  grid-auto-rows: minmax(10px, auto);
+  grid-gap: 0.2rem;
+}
+#daniel {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 81%);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 88% 0;
+
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+#jonathan {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 81%);
+  grid-column: 3/3;
+  grid-row: 1/3;
+}
+#patrick {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+  grid-column: 2/4;
+  grid-row: 3/5;
+}
+#jeanette {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(219, 29%, 14%);
+  grid-column: 1/1;
+  grid-row: 3/5;
+}
+#kira {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(219, 29%, 14%);
+  grid-column: 4/4;
+  grid-row: 1/5;
+}
+.profilepic {
+  display: inline-block;
+  border-radius: 100vw;
+  border-width: 2px;
+  width: 1.8vw;
+  vertical-align: middle;
+}
+.top {
+  /* padding: 0.2vw; */
+  font-weight: 500;
+  font-size: 13px;
+  grid-row: 1/1;
+}
+.review {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  grid-row: 2/2;
+}
+.comments {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  opacity: 70%;
+  grid-row: 3/3;
+}
+span {
+  display: inline-block;
+}
+.name {
+  padding-left: 0.8vw;
+  vertical-align: middle;
+}
+.verifiedgraduate {
+  font-size: 11px;
+
+  opacity: 50%;
+}
+@media only screen and (width <= 376px) {
+  body {
+    background-color: hsl(210, 46%, 95%);
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100vw;
+    /* overflow: auto; */
+  }
+  .content {
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    border-radius: 0.4rem;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .everything {
+    display: grid;
+    grid-auto-rows: minmax(auto, auto);
+    grid-auto-columns: minmax(auto, 300px);
+  }
+  #daniel {
+    grid-row: 1/2;
+
+    grid-column: 1/2;
+  }
+  #jonathan {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  #patrick {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  #jeanette {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  #kira {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+}
