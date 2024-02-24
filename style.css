@@ -112,7 +112,7 @@ span {
 
   opacity: 50%;
 }
-@media only screen and (width <= 376px) {
+@media only screen and (width <= 500px) {
   body {
     background-color: hsl(210, 46%, 95%);
     margin: 0;
