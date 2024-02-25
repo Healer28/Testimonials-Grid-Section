@@ -158,4 +158,11 @@ span {
     grid-row: 5/6;
     grid-column: 1/2;
   }
+  .profilepic {
+    display: inline-block;
+    border-radius: 100vw;
+    border-width: 2px;
+    width: 6vw;
+    vertical-align: middle;
+  }
 }
